@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_back_settings"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="95dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/audio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38sp"
+        tools:layout_editor_absoluteY="235sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/checkPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/text_position"
+        app:layout_constraintStart_toEndOf="@id/text_position"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/text_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/position"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38sp"
+        tools:layout_editor_absoluteY="280sp" />
+
+    <CheckBox
+        android:id="@+id/checkAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/text_audio"
+        app:layout_constraintStart_toEndOf="@id/text_audio"
+        app:layout_constraintTop_toTopOf="@id/text_audio"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/value_of_n"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/plusButton"
+        app:layout_constraintStart_toEndOf="@id/plusButton"
+        app:layout_constraintTop_toTopOf="@id/plusButton" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/minus"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="38sp"
+        tools:layout_editor_absoluteY="325sp"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/minus"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/minusButton"
+        app:layout_constraintStart_toEndOf="@id/minusButton"
+        app:layout_constraintTop_toTopOf="@id/minusButton"/>
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/seconds_between_events"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/plusSecButton"
+        app:layout_constraintStart_toEndOf="@id/plusSecButton"
+        app:layout_constraintTop_toTopOf="@id/plusSecButton" />
+
+    <Button
+        android:id="@+id/minusSecButton"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/minus"
+        android:textColor="@color/white"
+        android:textSize="5dp"
+        tools:layout_editor_absoluteX="38sp"
+        tools:layout_editor_absoluteY="370sp"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/plusSecButton"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/plus"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/minusSecButton"
+        app:layout_constraintStart_toEndOf="@id/minusSecButton"
+        app:layout_constraintTop_toTopOf="@id/minusSecButton" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

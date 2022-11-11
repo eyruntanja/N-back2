@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">N-back</string>
+    <string name="play">PLAY</string>
+    <string name="settings">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="audio">audio</string>
+    <string name="position">position</string>
+    <string name="n_back_settings">N-back settings</string>
+    <string name="value_of_n">value of N:</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="seconds_between_events">seconds between events:</string>
+</resources>
